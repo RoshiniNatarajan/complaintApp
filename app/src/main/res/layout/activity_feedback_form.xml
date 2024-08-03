@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img_2">
+
+    <TextView
+        android:id="@+id/textViewFeedbackForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FEEDBACK FORM"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutStaffName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFeedbackForm"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStaffName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Staff_Name"
+            tools:ignore="Autofill,TextFields,TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayoutStaffName"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutRoomNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayoutDepartment"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextRoomNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room No"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayoutRoomNo"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayoutEmail"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutServiceFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayoutMobileNo"
+        android:layout_marginBottom="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextServiceFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Service Feedback"
+            android:minLines="5"
+            android:gravity="top"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSubmitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:layout_below="@id/textInputLayoutServiceFeedback"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
